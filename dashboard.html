@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Health Dashboard</h1>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>Births This Month</h2>
+            <p>{{ data.births }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Antenatal Visits</h2>
+            <p>{{ data.antenatal }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Immunizations</h2>
+            <p>{{ data.immunizations }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Home Visits</h2>
+            <p>{{ data.home_visits }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Caesarean Sections</h2>
+            <p>{{ data.c_sections }}</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
